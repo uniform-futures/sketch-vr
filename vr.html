@@ -1,0 +1,18 @@
+<div id="scene-wrapper">
+  <a-scene>
+    <a-assets>
+      <img id="vr-sketch">
+    </a-assets>
+    <a-sky  color="#2989d8" visible="true" id="sky"></a-sky>
+    <a-entity id="sketch-cylinder" geometry="primitive: cylinder;
+                  radius: 6.8;
+                  height: 20;
+                  segmentsHeight: 64;
+                  open-ended: true;"
+        material="shader: flat; src: #vr-sketch; transparent: true;"
+        position="0 1.8 4"
+        scale="-1 1 1"
+        >
+    </a-entity>
+  </a-scene>
+</div>

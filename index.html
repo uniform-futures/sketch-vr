@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sketch VR</title>
+    <meta name="description" content="Sketch VR - A grassroot alternative to Tilt Brush for Cardboard">
+    <link rel="icon"
+      type="image/png"
+      href="/favicon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+
+  </head>
+  <body>
+    <div id="fakeLoader"></div>
+    <div id="content-wrapper">
+      <div class="top-left"><a href="http://uniform.net/" target="_blank"><img src="img/U_Wordmark_black.svg"></a></div>
+      <div class="top-right"><img src="img/U_iti_black.svg"></div>
+
+      <div id="info">
+        <h1>Sketch VR</h1>
+        <p id="about">
+          A very grassroot alternative to Tilt Brush, firstly used in workshop at <a href="http://uniform.net/blog/april-2016/sxsw-2016/">SXSW2016</a><br>
+          Made with <a href="https://aframe.io/">a-frame</a>
+        </p>
+        <hr>
+        <p>
+          1. Doodle on a white paper sheet with a black marker<br>
+          2. Take a photo of the worksheet<br>
+          3. Press <img id="headset-icon-sm" src="img/Headset.svg"></img> and put cardboard headset on
+        </p>
+        <img id="down-arrow" src="img/Down_Arrow.svg">
+
+        <form enctype="multipart/form-data" id="image-upload-form">
+          <div class="image-upload" id="text-instructions">
+            <label for="file-input">
+                    <img id="camera-icon" src="img/Camera_Button.png"/>
+                </label>
+                <input id="file-input" name="sketch" type="file"  accept="image/*;capture=camera">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+
+
+
+</html>
